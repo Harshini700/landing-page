@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Landing Page for Cakes and Bakes</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color: peachpuff;">
+        
+        <div class="ball"></div>
+        <section class="section">
+            <header class="header">
+                <a href="#"><img src="cake.jpeg" style="width: 50%;"></a>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </header>
+
+            <div class="container"> 
+                <div class="content">
+                    <h1>Shop<span>Cupcakes</span></h1>
+                    <h2>Order cupcakes for your party</h2>
+                    <p>Indulge in the finest selection of handcrafted cakes, each made with love and premium ingredients. 
+                        Whether you're celebrating a birthday, wedding, or just a sweet craving,our cakes are designed to bring joy to every occasion. 
+                        From classic flavors to custom creations, we offer something for every taste. Step into Sweet Delights, 
+                        where every bite is a celebration of flavor and artistry.
+                    </p>
+                    <a href="">Order Now</a>
+                </div>
+            
+            <div class="products " >
+                 <img src="img1.jpeg" class="cupcake" style="margin-top:50px;width:100%;">
+            </div>
+            <ul class="click">
+                <li><img src="img2jpeg.jpeg"onclick="imgslider('img2jpeg.jpeg');changecolor('#e7b6ab')"></li>
+                <li><img src="img4.jpeg" onclick="imgslider('img4.jpeg');changecolor('#F8C8DC')"></li>
+                <li><img src="img5.jpeg"onclick="imgslider('img5.jpeg');changecolor('#9F6551')"></li>
+            </ul>
+            </div>
+            <script type="text/javascript">
+                function imgslider(anything){
+                    document.querySelector('.cupcake').src=anything;
+                }
+                function changecolor(color){
+                    const ball=document.querySelector('.ball');
+                    ball.style.background=color;
+                }
+            </script>
+           
+            
+        </section>
+    </body>
+</html>
